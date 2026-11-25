@@ -1,4 +1,0 @@
-नमस्ते! यह एक ऑटो टाइपिंग टेस्ट फाइल है।
-Welcome to Auto Typer Utility!
-This script automatically reads any .txt file and types it character by character.
-It works smoothly across Notepad, Word, Web forms, and Chat boxes.
