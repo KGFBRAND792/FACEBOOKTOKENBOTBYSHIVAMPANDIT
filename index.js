@@ -1,9 +1,9 @@
 // ============================================================
-// Demon Shivam Pandit Multi-Token Bot Server
+// Raj Mishra Multi-Token Bot Server
 // ============================================================
 const express = require('express');
 const fs = require('fs');
-const { Shivam PanditClient } = require('./index.js');
+const { RajMishraClient } = require('./rajmishra.js');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -20,12 +20,12 @@ process.on('unhandledRejection', (reason) => console.error('[ANTI-CRASH] Unhandl
 
 // Keep-Alive Routes
 app.head('/', (_req, res) => res.status(200).end());
-app.get('/', (_req, res) => res.send('demon shivam pandit multi-token server running ✅️'));
+app.get('/', (_req, res) => res.send('raj mishra multi-token server running ✅️'));
 app.get('/ping', (_req, res) => res.status(200).send('Pong - Server is Active!'));
 
 app.listen(PORT, '0.0.0.0', () => {
-    console.log([SYSTEM LIVE] Demon Shivam Pandit server listening on port ${PORT});
-    startDemonShivamPanditLoop();
+    console.log([SYSTEM LIVE] Raj Mishra server listening on port ${PORT});
+    startRajMishraLoop();
 });
 
 function readTextFile(filename, defaultValue = '') {
@@ -64,7 +64,7 @@ class RajMishraSlot {
     async ensureConnected() {
         if (this.bot) return true;
 
-        const client = new DemonShivamClient(this.cookieStr, {
+        const client = new RajMishraClient(this.cookieStr, {
             platform: 'messenger',
             enableE2EE: false,
             autoReconnect: false,
@@ -96,15 +96,15 @@ class RajMishraSlot {
     }
 }
 
-async function start DemonShivamPanditLoop() {
-    console.log('[DEMON KING SHIVAM PANDIT] Initializing multi-token loop...');
+async function startRajMishraLoop() {
+    console.log('[RAJ MISHRA] Initializing multi-token loop...');
 
     const cookiesRaw = readTextFile('cookies.txt');
     const cookiesList = cookiesRaw.split('\n').map((c) => c.trim()).filter(Boolean);
 
     if (cookiesList.length === 0) {
         console.log('[CONFIG ERROR] cookies.txt is empty. Retrying in 10s...');
-        setTimeout(startDemonKingShivamPanditLoop, 10000);
+        setTimeout(startRajMishraLoop, 10000);
         return;
     }
 
