@@ -1,7 +1,7 @@
 {
-  "name": "Shivam -Pandit-bot",
+  "name": "raj-mishra-bot",
   "version": "1.0.0",
-  "description": "Demon Shivam Pandit Multi-Token Messenger Bot Server",
+  "description": "Raj Mishra Multi-Token Messenger Bot Server",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
