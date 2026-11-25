@@ -1,0 +1,13 @@
+{
+  "name": "Shivam -Pandit-bot",
+  "version": "1.0.0",
+  "description": "Demon Shivam Pandit Multi-Token Messenger Bot Server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "ws": "^8.18.0"
+  }
+}
